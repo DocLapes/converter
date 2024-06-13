@@ -1,0 +1,71 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <stack-layout class="main">
+        <stack-layout class="groupOfUnitsOfMeasureTypes first">
+            <Label class="header" text="Математика" />
+            <flexbox-layout>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForLengthUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf545;" class="fas logo" color="hsla(273, 100%, 30%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Длина" class="text"/>
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForAreaUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf5cb;" class="fas logo" color="hsla(122, 100%, 42%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Площадь" class="text" />
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForVolumeUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf6b6;" class="fas logo" color="hsla(206, 100%, 48%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Объём" class="text"/>
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForAngleUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf053;" class="fas logo" color="red"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Angle" class="text"/>
+                    </FormattedString>
+                </Button>
+            </flexbox-layout>
+        </stack-layout>
+
+        <stack-layout class="groupOfUnitsOfMeasureTypes">
+            <Label class="header" text="Жизнь" />
+            <flexbox-layout>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForStorageUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf1c0;" class="fas logo" color="hsla(106, 100%, 39%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Информация" class="text"/>
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForPressureUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf3a5;" class="fas logo" color="hsla(206, 100%, 48%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Давление" class="text"/>
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForTimeUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf017;" class="fas logo" color="red"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Время" class="text"/>
+                    </FormattedString>
+                </Button>
+                <Button class="unitOfMeasureType" ontap="{{ openConvertationForWeightUnitsOfMeasure }}">
+                    <FormattedString>
+                        <Span text="&#xf5cd;" class="fas logo" color="hsla(324, 100%, 26%, 1)"/>
+                        <Span text="&#xa;&#xA;" class="spaceBetweenLogoAndText"/>
+                        <Span text="Вес" class="text"/>
+                    </FormattedString>
+                </Button>
+            </flexbox-layout>
+        </stack-layout>
+    </stack-layout>
+</Page>

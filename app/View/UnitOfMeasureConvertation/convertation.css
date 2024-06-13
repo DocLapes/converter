@@ -1,0 +1,95 @@
+Page
+{
+    background-color: hsl(242, 0%, 95%);
+}
+
+.unitsOfMeasureConvertionTable
+{
+    height: 49%;
+    padding: 0 6;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.unitOfMeasure
+{
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 48%;
+    padding: 0 12;
+    border-radius: 15% 15% 15% 15%;
+}
+
+.unitOfMeasure.first
+{
+    background-color: hsl(242, 100%, 97%);
+}
+
+.unitOfMeasure.second
+{
+    background-color: white;
+}
+
+.unitOfMeasure .Type
+{
+    color: hsl(277, 100%, 30%);
+    font-size: 25;
+}
+
+.unitOfMeasure .Value
+{
+    align-self: flex-end;
+    font-size: 25;
+}
+
+.swapUnits
+{
+    border-radius: 8% 8% 8% 8%;
+    font-size: 23;
+    height: 6%;
+    border-color: black;
+    border-width: 1;
+    border-height: 1;
+    background-color: white;
+}
+
+.swapUnits:highlighted
+{
+    background-color: hsl(0, 0%, 83%);
+}
+
+.numpad
+{
+    height: 45%;
+    padding: 0 5;
+    background-color: white;
+}
+
+.numpad > Button
+{
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 20%;
+    font-size: 30;
+    width: 23%;
+    height: auto;
+}
+
+.numpad > Button:highlighted
+{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.numpad > Button[text='0']
+{
+    width: 48%;
+}
+
+.numpad .operation
+{
+    background-color: hsl(0, 100%, 85%);
+}
+
+.numpad .operation:highlighted
+{
+    background-color: hsl(0, 100%, 75%);
+}

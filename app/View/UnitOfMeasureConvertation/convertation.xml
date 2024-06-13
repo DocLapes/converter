@@ -1,0 +1,36 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="{{ title }}">
+        <NavigationButton android.systemIcon="ic_menu_back" tap="{{ gotoHomePage }}"/>
+    </ActionBar>
+
+    <StackLayout>
+        <FlexboxLayout class="unitsOfMeasureConvertionTable">
+            <FlexboxLayout class="unitOfMeasure first" tap="{{ chooseCurrentUnitOfMeasure }}">
+                <Label class="Type" text="{{ currentUnitOfMeasureTypeName }}"/>
+                <Label class="Value" text="{{ currentUnitOfMeasureValue }}" textWrap="true"/>
+            </FlexboxLayout>
+            <FlexboxLayout class="unitOfMeasure second" tap="{{ chooseTargetUnitOfMeasure }}">
+                <Label class="Type" text="{{ targetUnitOfMeasureTypeName }}"/>
+                <Label class="Value" text="{{ targetUnitOfMeasureValue }}" textWrap="true"/>
+            </FlexboxLayout>
+        </FlexboxLayout>
+
+        <Button ontap="{{ swapUnitsOfMeasureTypes }}" text="Поменять местами" class="swapUnits" />
+
+        <GridLayout class="numpad" columns="*, *, *, *" rows="*, *, *, *">
+            <button text="7" col="0" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <button text="8" col="1" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <button text="9" col="2" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <button text="4" col="0" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <button text="5" col="1" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <button text="6" col="2" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <button text="1" col="0" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <button text="2" col="1" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <button text="3" col="2" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <button text="0" col="0" colSpan="2" row="3" tap="{{ addSymbolToUserInput }}"/>
+            <button text="," col="2" row="3" tap="{{ addSymbolToUserInput }}"/>
+            <button class='operation fas' text="&#xf55a;" col="3" row="0" rowSpan="2" height="auto" tap="{{ deleteLastInputOfUser }}"/>
+            <button class='operation' text="AC" col="3" row="2" rowSpan="2" height="auto" tap="{{ clearUserInput }}"/>
+        </GridLayout>
+    </StackLayout>
+</Page>
